@@ -28,6 +28,6 @@ function Trueset()
 
 function Siren()
 {
-    var audio = new Audio("alarm.ogg");
+    var audio = new Audio("https://lewisjet.github.io/Basic-Web-Games/TimeGame/alarm.ogg");
     audio.play();    
 }
