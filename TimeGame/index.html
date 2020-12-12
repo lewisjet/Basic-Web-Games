@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stop the timer!</title>
+    <script src="Scripts/Timer.js"> </script>
+    <style>
+        body
+        {
+         text-align: center;
+         background: rgb(206, 206, 206);
+         color: rgb(56, 56, 56);
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Stop the timer!</h1>
+
+        <p></p>
+
+        <form>
+            <style>
+                @font-face {
+                    font-family: seven-segments;
+                    src: url(7segments.ttf);
+                }
+                p{
+                    font-family: seven-segments;
+                    font-size: xx-large;
+                }
+            </style>
+        <div id = "timer">
+            <p ></p>
+        </div>
+        </form>
+        <p></p>
+
+        <input type="button" value="Reset" onclick="TimerWork()">
+        <input type="button" value="Pause" onclick="stopped = !stopped">
+    </body>
+</html>
