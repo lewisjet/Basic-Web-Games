@@ -20,7 +20,7 @@ function Trueset()
     setInterval(function(){
         if(timeLeft <= 0 || stopped){if(!lost && timeLeft <= 0){ lost = true; Siren(); } return;}
         timeLeft--;
-        document.getElementById("timer").innerHTML = '<a>'+(timeLeft / 1000).toString()+"</a>"
+        document.getElementById("timer").innerHTML = '<p class = "timer">'+(timeLeft / 1000).toString()+"</p>"
         
         },1);
         
