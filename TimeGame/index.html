@@ -10,6 +10,18 @@
          background: rgb(206, 206, 206);
          color: rgb(56, 56, 56);
         }
+    
+        @font-face 
+        {
+            font-family: seven-segments;
+            src: url(https://lewisjet.github.io/Basic-Web-Games/TimeGame/7Segments.ttf);
+        }
+    
+        a
+        {
+            font-family: seven-segments;
+            font-size: xx-large;
+        }
     </style>
     </head>
     <body>
@@ -18,16 +30,7 @@
         <p></p>
 
         <form>
-            <style>
-                @font-face {
-                    font-family: seven-segments;
-                    src: url(https://lewisjet.github.io/Basic-Web-Games/TimeGame/7Segments.ttf);
-                }
-                p{
-                    font-family: seven-segments;
-                    font-size: xx-large;
-                }
-            </style>
+            
         <div id = "timer">
             <p ></p>
         </div>
@@ -36,5 +39,9 @@
 
         <input type="button" value="Reset" onclick="TimerWork()">
         <input type="button" value="Pause" onclick="stopped = !stopped">
+
+        <p></p>
+
+        <p>Welcome to Stop The Timer! The goal of this game is to get the timer as low as humanly possible (0.001s), without the timer reaching zero!</p>
     </body>
 </html>
